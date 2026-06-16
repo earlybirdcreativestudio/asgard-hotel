@@ -1,0 +1,75 @@
+{
+  "_source": "https://www.asgardhotel.nl/en/",
+  "cssVariables": {},
+  "computedColors": {
+    "header": {
+      "background": "rgb(255, 255, 255)",
+      "color": "rgb(51, 65, 85)"
+    },
+    "hero": null,
+    "footer": {
+      "background": "rgba(0, 0, 0, 0)",
+      "color": "rgb(51, 65, 85)"
+    },
+    "primaryButton": {
+      "background": "rgb(249, 249, 249)",
+      "color": "rgb(51, 51, 51)"
+    }
+  },
+  "vibrantSwatches": {
+    "Vibrant": {
+      "hex": "#222c77",
+      "rgb": [
+        34,
+        44,
+        119
+      ],
+      "population": 74
+    },
+    "LightVibrant": {
+      "hex": "#f4c092",
+      "rgb": [
+        244,
+        192,
+        146
+      ],
+      "population": 12
+    },
+    "DarkVibrant": {
+      "hex": "#7b4a31",
+      "rgb": [
+        123,
+        74,
+        49
+      ],
+      "population": 100
+    },
+    "Muted": {
+      "hex": "#545c9c",
+      "rgb": [
+        84,
+        92,
+        156
+      ],
+      "population": 1
+    },
+    "LightMuted": {
+      "hex": "#c8b5a8",
+      "rgb": [
+        200,
+        181,
+        168
+      ],
+      "population": 1903
+    },
+    "DarkMuted": {
+      "hex": "#414640",
+      "rgb": [
+        65,
+        70,
+        64
+      ],
+      "population": 216
+    }
+  }
+}

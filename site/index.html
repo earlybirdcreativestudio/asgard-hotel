@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asgard Hotel — Design &amp; Soul in Groningen</title>
+  <meta name="description" content="A 1930s design hotel in the heart of Groningen, filled with clay walls, original art, and organic breakfasts sourced from local farms." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ====== PRELOADER ====== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <p class="preloader__brand">ASGARD <span>Hotel</span></p>
+      <p class="preloader__count"><span id="loadCount">0</span></p>
+    </div>
+  </div>
+
+  <!-- ====== CUSTOM CURSOR ====== -->
+  <div class="cursor" id="cursor">
+    <span class="cursor__label" id="cursorLabel"></span>
+  </div>
+
+  <!-- ====== HEADER ====== -->
+  <header class="header" id="header">
+    <a href="#top" class="header__logo" data-cursor="link">ASGARD<span>Hotel</span></a>
+
+    <nav class="header__nav">
+      <a href="#stay" class="header__link" data-cursor="link">Stay</a>
+      <a href="#dine" class="header__link" data-cursor="link">Dine</a>
+      <a href="#bathe" class="header__link" data-cursor="link">Explore</a>
+      <a href="#days" class="header__link" data-cursor="link">Days</a>
+    </nav>
+
+    <div class="header__right">
+      <a href="#book" class="btn btn--small magnetic" data-cursor="link"><span>Book a room</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====== FULLSCREEN MENU ====== -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__bg"></div>
+    <div class="menu__media">
+      <img src="../scraped/assets/img_681f1ae3.jpg" alt="" id="menuImage" />
+    </div>
+    <nav class="menu__nav">
+      <a href="#stay"  class="menu__link" data-img="../scraped/assets/og_321f44a9.jpg"><span class="menu__index">01</span><span class="menu__word">Stay</span></a>
+      <a href="#dine"  class="menu__link" data-img="../scraped/assets/img_73e0d59d.jpg"><span class="menu__index">02</span><span class="menu__word">Dine</span></a>
+      <a href="#bathe" class="menu__link" data-img="../scraped/assets/img_72e90ef4.jpg"><span class="menu__index">03</span><span class="menu__word">Explore</span></a>
+      <a href="#days"  class="menu__link" data-img="../scraped/assets/img_681f1ae3.jpg"><span class="menu__index">04</span><span class="menu__word">Days</span></a>
+      <a href="#book"  class="menu__link" data-img="../scraped/assets/og_321f44a9.jpg"><span class="menu__index">05</span><span class="menu__word">Book</span></a>
+    </nav>
+    <div class="menu__foot">
+      <p>Ganzevoortsingel 2-1 · 9711 AL Groningen</p>
+      <p>+31 50 368 4810 · info@asgardhotel.nl</p>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="hero">
+      <div class="hero__media">
+        <img class="hero__img" src="../scraped/assets/og_321f44a9.jpg" alt="Luxury room with warm wood tones and natural light at Asgard Hotel Groningen" />
+        <div class="hero__veil"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow split-lines">A design hotel · Groningen city centre</p>
+        <h1 class="hero__title split-lines">Modern design,<br /><em>rooted in nature.</em></h1>
+      </div>
+
+      <div class="hero__bottom">
+        <p class="hero__note split-lines">Art-filled rooms in a 1930s landmark.<br />Clay walls, organic mornings, the city at the door.</p>
+        <div class="hero__scroll" data-cursor="link" id="scrollHint">
+          <span>Scroll</span>
+          <i></i>
+        </div>
+      </div>
+
+      <!-- booking bar -->
+      <form class="booking" id="book" onsubmit="return false">
+        <div class="booking__field">
+          <label for="arrive">Arrival</label>
+          <input id="arrive" type="text" placeholder="12 Jun" />
+        </div>
+        <div class="booking__field">
+          <label for="depart">Departure</label>
+          <input id="depart" type="text" placeholder="15 Jun" />
+        </div>
+        <div class="booking__field">
+          <label for="guests">Guests</label>
+          <input id="guests" type="text" placeholder="2" />
+        </div>
+        <button class="btn booking__btn magnetic" data-cursor="link" type="submit"><span>Check availability</span></button>
+      </form>
+    </section>
+
+    <!-- ====== MANIFESTO ====== -->
+    <section class="manifesto section">
+      <p class="eyebrow reveal">The hotel</p>
+      <h2 class="manifesto__text" id="manifesto">
+        Asgard is a 1930s landmark reimagined as a design hotel — clay walls,
+        original art, sustainable materials and the kind of breakfast that gives
+        the morning purpose. Groningen, beautifully.
+      </h2>
+      <div class="manifesto__stats">
+        <div class="stat reveal"><span class="stat__num" data-count="1930">0</span><span class="stat__label">decade of the building</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="12">0</span><span class="stat__label">seats in De Groene Kamer</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="100">0</span><span class="stat__label">% organic breakfast</span></div>
+      </div>
+
+      <div class="manifesto__floats" aria-hidden="true">
+        <figure class="float-img float-img--a" data-speed="-0.18">
+          <img src="../scraped/assets/img_681f1ae3.jpg" alt="" />
+        </figure>
+        <figure class="float-img float-img--b" data-speed="0.14">
+          <img src="../scraped/assets/img_73e0d59d.jpg" alt="" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====== ROOMS — HORIZONTAL ====== -->
+    <section class="rooms" id="stay">
+      <div class="rooms__pin" id="roomsPin">
+        <header class="rooms__head">
+          <p class="eyebrow reveal">Stay</p>
+          <h2 class="title reveal-lines">Rooms that<br /><em>earn their keep.</em></h2>
+        </header>
+
+        <div class="rooms__track" id="roomsTrack">
+          <article class="room" data-cursor="drag">
+            <div class="room__media"><img src="../scraped/assets/img_73e0d59d.jpg" alt="Sunlit bed with warm linen in an Asgard Hotel room" /></div>
+            <div class="room__meta">
+              <h3>Single Room</h3>
+              <p>Compact · city views · design details</p>
+              <span class="room__price">from €89 / night</span>
+            </div>
+          </article>
+
+          <article class="room" data-cursor="drag">
+            <div class="room__media"><img src="../scraped/assets/og_321f44a9.jpg" alt="Spacious double room with natural textures at Asgard Hotel" /></div>
+            <div class="room__meta">
+              <h3>Double Room</h3>
+              <p>Classic · clay wall finish · quiet street</p>
+              <span class="room__price">from €119 / night</span>
+            </div>
+          </article>
+
+          <article class="room" data-cursor="drag">
+            <div class="room__media"><img src="../scraped/assets/img_681f1ae3.jpg" alt="Luxurious room with warm tones and original artwork" /></div>
+            <div class="room__meta">
+              <h3>Luxurious Room</h3>
+              <p>Spacious · art by Berber Geerts · premium finish</p>
+              <span class="room__price">from €159 / night</span>
+            </div>
+          </article>
+
+          <article class="room" data-cursor="drag">
+            <div class="room__media"><img src="../scraped/assets/img_72e90ef4.jpg" alt="Bright room with panoramic city views over Groningen" /></div>
+            <div class="room__meta">
+              <h3>Luxurious City View</h3>
+              <p>Top floor · Groningen roofscape · designer bath</p>
+              <span class="room__price">from €189 / night</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="rooms__progress"><span id="roomsBar"></span></div>
+      </div>
+    </section>
+
+    <!-- ====== DINE ====== -->
+    <section class="dine section" id="dine">
+      <div class="dine__media clip-reveal" data-cursor="view">
+        <img data-speed-inner src="../scraped/assets/og_321f44a9.jpg" alt="Warm interior at Asgard Hotel with natural light and design details" />
+      </div>
+      <div class="dine__body">
+        <p class="eyebrow reveal">Breakfast</p>
+        <h2 class="title reveal-lines">Local farms,<br /><em>honest table.</em></h2>
+        <p class="lede reveal">Every morning we serve organic products sourced from
+          local Groningen farmers and entrepreneurs. Quality over quantity —
+          a breakfast worth getting up for.</p>
+        <a class="link-arrow reveal magnetic" href="https://www.asgardhotel.nl/en/" data-cursor="link"><span>About the hotel</span><i>→</i></a>
+        <figure class="dine__small clip-reveal">
+          <img src="../scraped/assets/img_73e0d59d.jpg" alt="Detail of a thoughtfully prepared room at Asgard Hotel" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====== BATHE — FULL BLEED ====== -->
+    <section class="bathe" id="bathe">
+      <div class="bathe__media">
+        <img id="batheImg" src="../scraped/assets/img_72e90ef4.jpg" alt="De Groene Kamer meeting room with green walls and natural light at Asgard Hotel" />
+      </div>
+      <div class="bathe__content">
+        <p class="eyebrow eyebrow--light reveal">Meet</p>
+        <h2 class="title title--light reveal-lines">De Groene<br /><em>Kamer.</em></h2>
+        <p class="lede lede--light reveal">Our Green Room seats twelve and sits
+          within walking distance of both Groningen's city centre and the
+          central station — a prime spot for meetings that matter.</p>
+        <a class="link-arrow link-arrow--light reveal magnetic" href="https://www.asgardhotel.nl/en/rooms/meeting-room/" data-cursor="link"><span>Book the room</span><i>→</i></a>
+      </div>
+    </section>
+
+    <!-- ====== DAYS — HOVER LIST ====== -->
+    <section class="days section" id="days">
+      <p class="eyebrow reveal">Days at Asgard</p>
+      <h2 class="title reveal-lines">Find your<br /><em>Groningen.</em></h2>
+
+      <ul class="days__list" id="daysList">
+        <li class="days__item" data-img="../scraped/assets/og_321f44a9.jpg" data-cursor="view">
+          <span class="days__no">01</span><h3>Groningen Museum</h3><span class="days__tag">All year</span>
+        </li>
+        <li class="days__item" data-img="../scraped/assets/img_73e0d59d.jpg" data-cursor="view">
+          <span class="days__no">02</span><h3>City cycling</h3><span class="days__tag">All year</span>
+        </li>
+        <li class="days__item" data-img="../scraped/assets/img_681f1ae3.jpg" data-cursor="view">
+          <span class="days__no">03</span><h3>Martini Tower climb</h3><span class="days__tag">Tue — Sun</span>
+        </li>
+        <li class="days__item" data-img="../scraped/assets/img_72e90ef4.jpg" data-cursor="view">
+          <span class="days__no">04</span><h3>Vismarkt farmers market</h3><span class="days__tag">Tue, Fri, Sat</span>
+        </li>
+        <li class="days__item" data-img="../scraped/assets/og_321f44a9.jpg" data-cursor="view">
+          <span class="days__no">05</span><h3>Canal walks</h3><span class="days__tag">All year</span>
+        </li>
+      </ul>
+
+      <div class="days__preview" id="daysPreview" aria-hidden="true">
+        <img id="daysPreviewImg" src="" alt="" />
+      </div>
+    </section>
+
+    <!-- ====== GALLERY MARQUEE ====== -->
+    <section class="gallery">
+      <div class="gallery__row" data-dir="1">
+        <div class="gallery__set">
+          <img src="../scraped/assets/og_321f44a9.jpg" alt="Luxury room at Asgard Hotel" />
+          <img src="../scraped/assets/img_73e0d59d.jpg" alt="Sunlit bed with warm linen" />
+          <img src="../scraped/assets/img_681f1ae3.jpg" alt="Portrait view of Asgard Hotel room" />
+          <img src="../scraped/assets/img_72e90ef4.jpg" alt="De Groene Kamer meeting room" />
+          <img src="../scraped/assets/og_321f44a9.jpg" alt="Design detail at Asgard Hotel" />
+        </div>
+        <div class="gallery__set" aria-hidden="true">
+          <img src="../scraped/assets/og_321f44a9.jpg" alt="" />
+          <img src="../scraped/assets/img_73e0d59d.jpg" alt="" />
+          <img src="../scraped/assets/img_681f1ae3.jpg" alt="" />
+          <img src="../scraped/assets/img_72e90ef4.jpg" alt="" />
+          <img src="../scraped/assets/og_321f44a9.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CTA ====== -->
+    <section class="cta">
+      <p class="eyebrow eyebrow--light reveal">A room with your name on it</p>
+      <h2 class="cta__title reveal-lines">Stay<em> a little longer.</em></h2>
+      <a href="#book" class="btn btn--light magnetic reveal" data-cursor="link"><span>Check availability</span></a>
+    </section>
+
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <p class="footer__head">Find us</p>
+        <p>Ganzevoortsingel 2-1<br />9711 AL Groningen, NL</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Talk to us</p>
+        <p><a href="tel:+31503684810" data-cursor="link">+31 50 368 4810</a><br />
+        <a href="mailto:info@asgardhotel.nl" data-cursor="link">info@asgardhotel.nl</a></p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Follow</p>
+        <p><a href="#" data-cursor="link">Instagram</a><br /><a href="#" data-cursor="link">Facebook</a></p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__head">Small print</p>
+        <p><a href="#" data-cursor="link">Imprint</a><br /><a href="#" data-cursor="link">Privacy</a></p>
+      </div>
+    </div>
+    <div class="footer__mark" aria-hidden="true">ASGARD</div>
+    <p class="footer__credit">Design &amp; soul in a 1930s Groningen landmark. © 2026</p>
+  </footer>
+
+  <!-- GSAP + Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
