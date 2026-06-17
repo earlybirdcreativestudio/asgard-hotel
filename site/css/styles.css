@@ -178,6 +178,7 @@ input::placeholder { color: var(--ink-soft); }
   border-radius: 50%;
   background: var(--clay);
   pointer-events: none;
+  cursor: none;
   z-index: 300;
   transform: translate(-50%, -50%);
   opacity: 0; /* revealed on first mousemove */
@@ -204,6 +205,7 @@ input::placeholder { color: var(--ink-soft); }
 .cursor.is-drag .cursor__label { opacity: 1; }
 
 @media (pointer: fine) {
+  html, body { cursor: none; }
   .cursor { display: flex; }
 }
 
