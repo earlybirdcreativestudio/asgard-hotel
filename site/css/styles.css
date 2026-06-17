@@ -154,11 +154,11 @@ input::placeholder { color: var(--ink-soft); }
 }
 .preloader__inner { text-align: center; }
 .preloader__brand {
-  font-family: var(--serif);
+  font-family: "Audiowide", sans-serif;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   letter-spacing: 0.08em;
 }
-.preloader__brand span { font-style: italic; opacity: 0.6; margin-left: 0.3em; }
+.preloader__brand span { font-style: normal; opacity: 0.6; margin-left: 0.3em; }
 .preloader__count {
   margin-top: 1rem;
   font-size: 0.8rem;
@@ -240,13 +240,13 @@ body.menu-open .header__logo { color: var(--cream); }
 body.menu-open .burger span { background: var(--cream); }
 
 .header__logo {
-  font-family: var(--serif);
+  font-family: "Audiowide", sans-serif;
   font-size: 1.3rem;
   letter-spacing: 0.06em;
   color: var(--cream);
   transition: color 0.5s ease;
 }
-.header__logo span { font-style: italic; font-size: 0.85em; opacity: 0.7; margin-left: 0.3em; }
+.header__logo span { font-style: normal; font-size: 0.85em; opacity: 0.7; margin-left: 0.3em; }
 .header.is-solid .header__logo { color: var(--ink); }
 
 .header__nav { display: flex; gap: 2.2rem; }
